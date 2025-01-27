@@ -36,6 +36,6 @@ DietFit is a health and fitness application designed to calculate various health
 Each step will be committed and pushed to this repository as it is completed.
 
 ## Contact
-- **LinkedIn:** https://www.linkedin.com/in/muneeb74/(#)
-- **GitHub:** https://github.com/muneeb-akram74(#)
+- **LinkedIn:** [https://www.linkedin.com/in/muneeb74/](#)
+- **GitHub:** [https://github.com/muneeb-akram74](#)
 
