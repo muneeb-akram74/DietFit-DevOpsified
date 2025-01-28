@@ -1,0 +1,26 @@
+- name: Deploy DietFit Web App
+  hosts: dietfit
+  become: true
+  tasks:
+
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+
+    - name: Start Docker Service
+      systemd:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Pull the latest DietFit Docker image
+      command: docker pull muneeb6774/dietfit:latest
+
+    - name: Stop existing container (if running)
+      command: docker rm -f dietfit_container
+      ignore_errors: yes
+
+    - name: Run the DietFit container
+      command: >
+        docker run -d --name dietfit_container -p 8081:80 muneeb6774/dietfit:latest
