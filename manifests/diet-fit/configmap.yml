@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: diet-fit
 data:
-  ui_properties_file_name: "muneeb-interface.properties"
+  ui_properties_file_name: "muneeb-akram-interface.properties"
