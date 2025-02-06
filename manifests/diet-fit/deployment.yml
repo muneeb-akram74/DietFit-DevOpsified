@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dietfit-ui
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: dietfit-ui
+  template:
+    metadata:
+      labels:
+        app: dietfit-ui
+    spec:
+      containers:
+      - image: muneeb6774/dietfit
+        name: dietfit-ui
+        ports:
+        - containerPort: 80
