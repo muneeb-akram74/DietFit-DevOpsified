@@ -3,5 +3,5 @@
 
 -- --- ---
 
-## Standaed Storage Created
+## Standard Storage Created
 ``` az storage account create --resource-group diet-fit-rg --name storagefordietfit55 --location eastus --sku Standard_LRS --kind StorageV2 ```
